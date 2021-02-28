@@ -2,3 +2,25 @@
 .page {
   font-family: Montserrat;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-model {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.preview__title,
+.preview__subtitle {
+text-align: center;
+}
