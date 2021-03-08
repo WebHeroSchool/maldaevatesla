@@ -1,4 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .header,
 .page {
   font-family: Montserrat;
+
 }
+
+.header {
+  margin-left: 3%;
+  margin-right: 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.header__logo {
+margin-top: 24px;
+}
+.menu-model {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 28px;
+  padding-left: 7%;
+}
+.menu-model__item {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 44px;
+}
+.menu-model__item:first-child {
+  margin-right: 63px;
+}
+.menu-model__item:nth-child(2) {
+  margin-right: 26px;
+}
+.menu-model__item:nth-last-child(2) {
+  margin-right: 48px;
+}
+.menu-model__item_active {
+  color: #e51937;
+}
+.menu-model__item::after{
+  position: absolute;
+  display: block;
+  content: "";
+  background: #e51937;
+  width: 0;
+  height: 2px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s, width 0.9s;
+}
+.menu-model__item:hover {
+  color: #e51937;
+}
+.menu-model__item:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.menu-model__item_active::after {
+  opacity: 1;
+  color: #e51937;
+  width: 100%;
+}
+.side-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 28px;
+margin-left: 30px;
+}
+.side-menu__item {
+  position: relative;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  margin-right: 23px;
+  color: #000;
+}
+
+.side-menu__item::after{
+  position: absolute;
+  display: block;
+  content: "";
+  background: #e51937;
+  width: 0;
+  height: 2px;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s, width 0.9s;
+}
+.side-menu__item:hover {
+  color: #e51937;
+}
+.side-menu__item:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+.side-menu__item_active::after {
+  opacity: 1;
+  color: #e51937;
+  width: 100%;
+}
+.menu-action {
+  padding-top: 2px;
+}
+
+/* 1 этаж */
+
+.preview {
+  text-align: center;
+}
+.preview__foto {
+/* margin-top: 17px; */
+padding-right: 80px;
+}
+
+.preview__bg {
+  background: url(img/Tesla-Wordmark-Red+.svg) center 0%/100% auto no-repeat;
+  margin-bottom: 27px;
+}
+.preview__title,
+.preview__subtitle {
+text-align: center;
+color: #000;
+}
+.preview__title {
+  font-weight: 600;
+  font-size: 90px;
+  margin-top: 0;
+  bottom: 0;
+}
+.preview__subtitle{
+  font-weight: 500;
+  font-size: 12px;
+  bottom: 10px;
+  position: relative;
+  word-spacing: 1.5px;
+
+}
+.preview__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 57%;
+  margin: auto;
+  margin-bottom: 35px;
+}
+.preview__description {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  max-width: 410px;
+  width: 100%;
+}
+.description {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  /* margin-right: 81px;
+  margin-left: 0; */
+}
+.description:last-child {
+  margin-right: 0;
+}
+.specification {
+  display: flex;
+  flex-direction: column;
+}
+.specification__value {
+  font-weight: 600;
+  font-size: 35px;
+  margin-left: 14px;
+}
+.specification__unit {
+  font-weight: 600;
+  font-size: 20px;
+}
+.specification__title {
+  font-size: 12px;
+  text-align:justify;
+  padding-left: 10px;
+
+}
+.order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 360px;
+  width: 100%;
+  padding: 5px 0 0 35px;
+
+}
+.order__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 40px;
+  text-decoration: none;
+  min-width: 118px;
+}
+.order__info_red:hover .order__title_red {
+  color: #e51937;
+}
+
+.order__info_red:hover svg {
+  fill: #e51937;
+}
+.order__title {
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0;
+  padding-left: 10px;
+  text-transform: uppercase;
+  word-spacing: .5px;
+}
+.order__btn {
+  border: 2px solid #e51937;
+  background: #fff;
+  color: #e51937;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+  width: 160px;
+  height: 40px;
+  text-transform: uppercase;
+}
+.order__btn:hover {
+  background: #e51937;
+  color: #fff;
+}
+.preview__arrow {
+  background: url(img/vector.svg) no-repeat;
+  width: 34px;
+  height: 54px;
+  margin: auto;
+}
+/* .description-wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 410px;
+  width: 100%;
+} */
